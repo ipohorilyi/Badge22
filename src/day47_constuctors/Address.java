@@ -6,6 +6,7 @@ public class Address {
     private String state;
     private String zipCode;
     private String country= "USA";
+    private String test;
 
     @Override
     public String toString() {
