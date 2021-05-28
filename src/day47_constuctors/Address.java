@@ -6,9 +6,24 @@ public class Address {
     private String state;
     private String zipCode;
     private String country= "USA";
-    private String test;
 
-    @Override
+    //constructor
+    public Address (){
+        System.out.println("Address constructor ");
+        street = "123 unknown st";
+        city = "java";
+        state = "MN";
+        zipCode = "0000";
+
+    }
+    public  Address(String street,String city,String state,String zipCode){
+        this.street = street;
+        setStreet(street);
+    }
+
+
+
+
     public String toString() {
         return street + ", " + city + ", "+ state + ", "+ zipCode;
     }
